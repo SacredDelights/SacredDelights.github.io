@@ -23,6 +23,9 @@
 .full {
   height: 100vh;
 }
+button.nav.default-nav {
+  display:none;
+}
 
 /*.center {*/
 /*  display: flex;*/

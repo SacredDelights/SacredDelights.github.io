@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Quote.css";
-import Swal from 'sweetalert2'
-import {useNavigate} from "react-router-dom";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 interface FormData {
   name: string;
@@ -14,10 +14,10 @@ const Quote: React.FC = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,13 +38,13 @@ const Quote: React.FC = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: json
+      body: json,
     }).then((res) => res.json());
 
     if (res.success) {
-      setFormData({ name: '', email: '', phone: '', message: '', });
+      setFormData({ name: "", email: "", phone: "", message: "" });
 
       Swal.fire({
         title: "Success!",
@@ -54,10 +54,9 @@ const Quote: React.FC = () => {
         timer: 1500,
       });
 
-      navigate('/');
+      navigate("/");
     }
   };
-
 
   return (
     <>
@@ -71,21 +70,52 @@ const Quote: React.FC = () => {
           <form onSubmit={onSubmit}>
             <label className="required">Name</label>
             <div className="field-name">
-              <input className="field required" type="text" placeholder="" name="name" onChange={handleChange} required value={formData.name}/>
+              <input
+                className="field required"
+                type="text"
+                placeholder=""
+                name="name"
+                onChange={handleChange}
+                required
+                value={formData.name}
+              />
             </div>
             <label className="required">Email</label>
-            <input type="text" placeholder="" name="email" value={formData.email} onChange={handleChange} required/>
+            <input
+              type="text"
+              placeholder=""
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
             <label>Phone</label>
-            <input type="text" placeholder="" name="phone" value={formData.phone} onChange={handleChange}/>
+            <input
+              type="text"
+              placeholder=""
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+            />
             <label className="required">Comment or message</label>
-            <textarea name="message" required placeholder="" onChange={handleAreaChange} value={formData.message} style={{height: "6rem", resize: "vertical"}}/>
-            <button type="submit"
-                    className=" bg-white px-8 py-3 border rounded my-4 hover:border-primary hover:text-primary transition-all w-[150px]">Submit
+            <textarea
+              name="message"
+              required
+              placeholder=""
+              onChange={handleAreaChange}
+              value={formData.message}
+              style={{ height: "6rem", resize: "vertical" }}
+            />
+            <button
+              type="submit"
+              className=" bg-white px-8 py-3 border rounded my-4 hover:border-primary hover:text-primary transition-all w-[150px]"
+            >
+              Submit
             </button>
           </form>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 export default Quote;

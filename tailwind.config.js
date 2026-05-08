@@ -7,13 +7,19 @@ module.exports = {
   ],
   theme: {
     colors: {
-      // transparent: 'transparent',
-      // current: 'currentColor',
+
       primary: {
         light: '#fe9f2a',
-        DEFAULT: '#e37d00',
+        DEFAULT: '#C5A059',
         dark: '#b66400',
       },
+      secondary: {
+        DEFAULT:'#1b0d0d',
+      },
+      cocoa: {
+        DEFAULT:'#3D2B1F',
+      },
+           
       gray: {
         darkest: '#1f2d3d',
         dark: '#3c4858',
@@ -36,6 +42,9 @@ module.exports = {
       Ubuntu: ['Ubuntu Sans', 'sans-serif'],
       Lato: ['Lato', 'sans-serif'],
       Eyesome: ['EyesomeScript', 'sans-serif'],
+      Playfair: ['PlayfairDisplay-Bold', 'sans-serif'],
+      Montserrat: ['Montserrat-Light', 'sans-serif'],
+      Lora:['Lora-Regular', 'sans-serif'],
     },
     fontSize: {
       'h1': 'calc(3vh + 6vw)',
@@ -47,22 +56,17 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./images/SOV-20240212-7704-1920.webp')",
-        'contact': "url('./images/contactus.webp')",
         'footer-texture': "url('/img/footer-texture.png')",
-        'staging': "url('./images/SOV-20240212-7831.webp')",
-        'furnish': "url('./images/SOV-20240212-7803-1920.webp')",
-        'vacation': "url('./images/SOV-20240212-7835.webp')",
         'header-logo': "url('./images/header-logo.webp')",
         'footer-logo': "url('./images/logo-dark.webp')",
-        'quote-bkg': "url('./images/quote-bkg.webp')",
-        'portfolio-bkg': "url('./images/portfolio-bkg.webp')",
-        'staging-bkg': "url('./images/SOV-20240212-7803-1920.webp')",
-        'furnish-bkg': "url('./images/furnish-bkg.webp')",
-        'furnish-img': "url('./images/SOV-20240212-7831.webp')",
-        'vacation-bkg': "url('./images/vacation-bkg.webp')",
-        'vacation-img1': "url('./images/vacation-img1.webp')",
-        'vacation-img2': "url('./images/vacation-img2.webp')",
+        'story': "url('./images/story.png')",
+        'custombg1': "url('./images/logan-voss-unsplash.jpg')",
+        'abstract': "url('./images/abstract.jpg')",
+        'abstract2': "url('./images/abstract2.jpg')",
+        'splash': "url('./images/splash.jpg')",
+        'order': "url('./images/order.jpg')",
+        'slidebg': "url('./images/slide-bg.png')",
+
 
       },
       minHeight: {

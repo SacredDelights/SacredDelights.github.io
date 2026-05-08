@@ -7,13 +7,14 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, isActive, ...props
-                                       }) => {
-
+const Button: React.FC<ButtonProps> = ({ children, isActive, ...props }) => {
   return (
-    <button  className={`${isActive ? " border-primary text-primary" : ""} px-8 py-3 border rounded my-4 hover:border-primary hover:text-primary transition-all min-w-[155px]`} {...props}>
+    <button
+      className={`${isActive ? " border-primary text-primary" : ""} px-8 py-3 border rounded my-4 hover:border-primary hover:text-primary transition-all min-w-[155px]`}
+      {...props}
+    >
       {children}
     </button>
   );
-}
-export default Button
+};
+export default Button;

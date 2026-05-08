@@ -27,11 +27,13 @@ nav .main-nav {
 }
 
 
-.main-nav ul li a {
+.main-nav ul li a,
+.main-nav ul li span  {
   font-size: 18px;
   line-height: 26px;
   font-weight: 200;
-  color: #3c4858;
+  /* color: #3c4858; */
+  color:#F9F5F1;
   font-family: 'Ubuntu Sans', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -40,15 +42,16 @@ nav .main-nav {
 
 .main-nav ul li.current_page_item a,
 .main-nav ul li a:hover {
-  color: #e37d00;
+  /* color: #e37d00; */
+  color: #C5A059;
 }
 
 .main-nav ul li a.active {
-  color: #e37d00;
-  border-bottom: 1px solid #e37d00;
+  color: #C5A059;
+  border-bottom: 1px solid #C5A059;
 }
 .main-nav ul li:has(li a.active) {
-  color: #e37d00;
+  color: #C5A059;
 }
 
 @media screen and (min-width:1000px){
@@ -72,7 +75,8 @@ nav .main-nav {
   }
 
   .main-nav ul li:hover .sub-menu {
-    height: 138px;
+    height: 145px;
+    background-color: black;
   }
 
   .main-nav ul li .sub-menu {
@@ -85,9 +89,9 @@ nav .main-nav {
     transition-delay: 0.1s;
     z-index:99;
     padding-left: 0;
-    background: #ffffff !important;
+    /* background: #ffffff !important; */
     border-radius: 3px;
-    box-shadow: 3px 3px 10px #dadada;
+    box-shadow: 1px 1px 3px #dadada;
   }
   .main-nav ul li .sub-menu li{
     display: block;

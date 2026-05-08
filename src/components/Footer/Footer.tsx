@@ -1,4 +1,5 @@
-import logo_footer from "../../images/logo-dark.webp";
+// import logo_footer from "../../images/logo-dark.webp";
+import logo_footer from "../../images/header-logo.jpg";
 import Button from "../Button/Button";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,14 +12,14 @@ export default function Footer() {
     navigate(path);
   };
   return (
-    <div className={" bg-gray"}>
+    <div className={" bg-black"}>
       <footer className="footer">
         <div className={"logo flex justify-center"}>
           <a href="/">
             <img
               className={"w-36"}
               src={logo_footer}
-              alt="Atrium Studio Logo"
+              alt="Sacred Delights"
               width={"100%"}
             />
           </a>
@@ -26,7 +27,7 @@ export default function Footer() {
         <div className="social flex justify-center items-center">
           <p className={"flex gap-2"}>
             <a
-              href="tel:+15038804665"
+              href="tel:+13053605585"
               target="_blank"
               rel="noopener noreferrer"
               className={"hover:fill-gray"}
@@ -42,7 +43,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="mailto:info@atriumstaging.com"
+              href="mailto:info@sacreddelights.net"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +58,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/atriumstaging/"
+              href="https://www.instagram.com/@sacreddelights_"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +73,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/atriumstaging/"
+              href="https://www.facebook.com/Sacred Delights"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,7 +88,7 @@ export default function Footer() {
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
               </svg>
             </a>
-            <a
+            {/* <a
               href="https://www.pinterest.com/atriumstaging"
               target="_blank"
               rel="noopener noreferrer"
@@ -101,11 +102,12 @@ export default function Footer() {
               >
                 <path d="M384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h72.6l-2.2-.8c-5.4-48.1-3.1-57.5 15.7-134.7c3.9-16 8.5-35 13.9-57.9c0 0-7.3-14.8-7.3-36.5c0-70.7 75.5-78 75.5-25c0 13.5-5.4 31.1-11.2 49.8c-3.3 10.6-6.6 21.5-9.1 32c-5.7 24.5 12.3 44.4 36.4 44.4c43.7 0 77.2-46 77.2-112.4c0-58.8-42.3-99.9-102.6-99.9C153 139 112 191.4 112 245.6c0 21.1 8.2 43.7 18.3 56c2 2.4 2.3 4.5 1.7 7c-1.1 4.7-3.1 12.9-4.7 19.2c-1 4-1.8 7.3-2.1 8.6c-1.1 4.5-3.5 5.5-8.2 3.3c-30.6-14.3-49.8-59.1-49.8-95.1C67.2 167.1 123.4 96 229.4 96c85.2 0 151.4 60.7 151.4 141.8c0 84.6-53.3 152.7-127.4 152.7c-24.9 0-48.3-12.9-56.3-28.2c0 0-12.3 46.9-15.3 58.4c-5 19.3-17.6 42.9-27.4 59.3H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64z"></path>
               </svg>
-            </a>
+            </a> */}
           </p>
         </div>
-        <div className="quote text-center flex justify-center items-center">
+        <div className="quote text-center flex justify-center items-center text-[#F9F5F1]">
           <Button
+            // className={"text-white"}
             children={"Get a quote"}
             isActive={false}
             onClick={() => {
@@ -113,10 +115,10 @@ export default function Footer() {
             }}
           />
         </div>
-        <div className="copyright text-center flex justify-center items-center">
+        <div className="copyright text-center flex justify-center items-center text-[#F9F5F1]">
           <div>
             <h4>
-              <p>&copy; {currentYear} Atrium Design, LLC</p>
+              <p>&copy; {currentYear} Sacred Delights, LLC</p>
             </h4>
             <h4> All rights reserved</h4>
           </div>

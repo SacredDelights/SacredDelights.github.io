@@ -49,7 +49,7 @@ export default function MainPage() {
                   children={"Learn more"}
                   isActive={false}
                   onClick={() => {
-                    goToPage("/story");
+                    goToPage("/br/story");
                   }}
                 />
               </div>
@@ -102,7 +102,7 @@ export default function MainPage() {
                   children={"Learn more"}
                   isActive={false}
                   onClick={() => {
-                    goToPage("/portfolio");
+                    goToPage("/br/portfolio");
                   }}
                 />
               </div>
@@ -236,7 +236,7 @@ export default function MainPage() {
                 children={"Order"}
                 isActive={false}
                 onClick={() => {
-                  goToPage("/quote");
+                  goToPage("/br/quote");
                 }}
               />
             </div>

@@ -49,7 +49,7 @@ export const AdvancedBannerTop = () => {
             children={"Learn more"}
             isActive={false}
             onClick={() => {
-              goToPage("/about");
+              goToPage("/br/about");
             }}
           />
         </div>

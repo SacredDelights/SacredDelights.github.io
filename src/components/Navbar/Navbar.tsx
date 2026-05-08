@@ -28,7 +28,7 @@ export const Navbar = () => {
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/story"}>Story</NavLink>
+                  <NavLink to={"/br/story"}>Story</NavLink>
                 </li>
                 {/* <li>
                   <span>Services</span>
@@ -51,16 +51,16 @@ export const Navbar = () => {
                   </ul>
                 </li> */}
                 <li>
-                  <NavLink to={"/portfolio"}>Portfolio</NavLink>
+                  <NavLink to={"/br/portfolio"}>Portfolio</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/about"}>About us</NavLink>
+                  <NavLink to={"/br/about"}>About us</NavLink>
                 </li>
                 {/* <li>
                   <NavLink to={"/contact"}>Contact us</NavLink>
                 </li> */}
                 <li>
-                  <NavLink to={"/get-a-quote"}>Request order</NavLink>
+                  <NavLink to={"/br/get-a-quote"}>Request order</NavLink>
                 </li>
               </ul>
             </div>

@@ -4,10 +4,10 @@ import "react-slideshow-image/dist/styles.css";
 
 const Slider = () => {
   const images = [
-    "https://raw.githubusercontent.com/borisay/atrium-react/refs/heads/main/src/images/slide2.webp",
-    "https://raw.githubusercontent.com/borisay/atrium-react/refs/heads/main/src/images/slide3.webp",
-    "https://raw.githubusercontent.com/borisay/atrium-react/refs/heads/main/src/images/slide4.webp",
-    "https://raw.githubusercontent.com/borisay/atrium-react/refs/heads/main/src/images/slide5.webp",
+    "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/slide2.webp",
+    "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/slide3.webp",
+    "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/slide4.webp",
+    "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/slide5.webp",
   ];
 
   return (

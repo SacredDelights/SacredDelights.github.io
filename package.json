@@ -1,9 +1,9 @@
 {
-  "name": "atrium-react",
+  "name": "sacred-delights",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://atriumstaging.github.io",
+  "homepage": "https://SacredDelights.github.io",
   "dependencies": {
     "@react-navigation/native": "^7.0.15",
     "@react-navigation/stack": "^7.1.2",

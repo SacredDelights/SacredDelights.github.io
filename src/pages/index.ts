@@ -1,6 +1,0 @@
-export { default as MainPage } from "./MainPage";
-export { default as Portfolio } from "./Portfolio";
-export { default as GetAQuote } from "./GetAQuote";
-export { default as ContactUs } from "./ContactUs";
-export { default as Story } from "./Story";
-export { default as AboutUs } from "./AboutUs";

@@ -22,7 +22,7 @@ export const Navbar = () => {
                 className={"w-[8rem] lg:w-[11rem] p-[10px]"}
               />
             </Link>
-            <div className={menuOpen ? "main-nav open" : "main-nav"}>
+            <div className={menuOpen ? "main-nav open pb-4" : "main-nav"}>
               <ul className="">
                 <li>
                   <NavLink to={"/"}>Home</NavLink>
@@ -30,49 +30,28 @@ export const Navbar = () => {
                 <li>
                   <NavLink to={"/br/story"}>Story</NavLink>
                 </li>
-                {/* <li>
-                  <span>Services</span>
-                  <ul className={"sub-menu"}>
-                    <li>
-                      <NavLink to={"/services/home-staging"}>
-                        Home Staging
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/services/furnish-and-style"}>
-                        Furnish and Style
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/services/vacation-rental"}>
-                        Vacation Rental
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li> */}
                 <li>
-                  <NavLink to={"/br/portfolio"}>Portfolio</NavLink>
+                  <NavLink to={"/portfolio"}>Portfolio</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/br/about"}>About us</NavLink>
                 </li>
-                {/* <li>
-                  <NavLink to={"/contact"}>Contact us</NavLink>
-                </li> */}
                 <li>
                   <NavLink to={"/br/get-a-quote"}>Request order</NavLink>
                 </li>
               </ul>
             </div>
           </div>
-          <div
-            className={className}
-            onClick={() => {
-              setMenuOpen(!menuOpen);
-              setClassName(!menuOpen ? "icon-menu active" : "icon-menu");
-            }}
-          >
-            <span></span>
+          <div className="py-8 px-2">
+            <div
+              className={className}
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+                setClassName(!menuOpen ? "icon-menu active pb-4" : "icon-menu");
+              }}
+            >
+              <span></span>
+            </div>
           </div>
         </nav>
       </header>

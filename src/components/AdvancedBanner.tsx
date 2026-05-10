@@ -42,7 +42,7 @@ export const AdvancedBannerTop = () => {
     scale: [1.1, 1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     children: (
-      <div className="absolute bottom-[-20px] md:right-8 bottom-0  md:w-1/2 w-full right-0 p-16 bg-black/50 text-white text-p-plus font-extralight leading-10 ">
+      <div className="absolute bottom-[-20px] md:w-1/2 w-full right-0 p-16 md:p-8 lg:p-16 bg-black/50 text-white text-p-plus font-extralight leading-10 ">
         <p className="">{secondaryText}</p>
         <div className={"flex justify-center my-6 md:my-12"}>
           <Button

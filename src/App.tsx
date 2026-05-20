@@ -9,6 +9,8 @@ import {
   GetAQuote,
   Story,
   AboutUs,
+  Merengue,
+  Menu,
 } from "./pages";
 
 import Footer from "./components/Footer/Footer";
@@ -26,6 +28,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/menus/merengue" element={<Merengue />} />
+        <Route path="/menus/menu" element={<Menu />} />
         <Route path="/get-a-quote" element={<GetAQuote />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

@@ -22,7 +22,7 @@
 }
 .intro p{
   margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 18px;
 }
 h2{
   text-align: center;
@@ -32,7 +32,7 @@ form{
   padding: 1rem;
 }
 /*.field{*/
-input[type="text"],textarea {
+input[type="text"],textarea, select, input[type="number"]{
   padding: 0.25rem 0.5em;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
@@ -40,6 +40,7 @@ input[type="text"],textarea {
   box-sizing: border-box;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  color: black;
 }
 
 .field-name{
@@ -50,10 +51,10 @@ input[type="text"],textarea {
 }
 
 @media (min-width: 769px) {
-  .field-name {
+  /* .field-name {
     flex-direction: row;
     gap: 1.5rem;
-  }
+  } */
   .intro{
     text-align: left!important;
   }

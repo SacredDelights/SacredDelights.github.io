@@ -5,7 +5,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { AdvancedBannerTop } from "../components/AdvancedBanner";
 import BackgroundVideo from "../components/BackgroundVideo";
 import Star from "../components/Star";
-import WebpageSection from "../components/WebpageSection";
+// import WebpageSection from "../components/WebpageSection";
 import Slider from "../components/Slider";
 
 export default function MainPage() {
@@ -49,7 +49,7 @@ export default function MainPage() {
                   children={"Learn more"}
                   isActive={false}
                   onClick={() => {
-                    goToPage("/br/story");
+                    goToPage("/story");
                   }}
                 />
               </div>
@@ -102,7 +102,7 @@ export default function MainPage() {
                   children={"Learn more"}
                   isActive={false}
                   onClick={() => {
-                    goToPage("/br/portfolio");
+                    goToPage("/portfolio");
                   }}
                 />
               </div>
@@ -213,14 +213,11 @@ export default function MainPage() {
       <div className="relative h-64 w-full bg-cover bg-center bg-order flex flex col h-auto">
         <div className="absolute inset-0 bg-black opacity-80 border-y-2 border-primary"></div>
         <div className="relative z-10 flex h-full items-center justify-start">
-          {/* <h1 className="text-white text-3xl font-bold">Request order</h1> */}
           <div
             className={
               "text-white border-t-2 border-primary p-16 flex flex-col justify-start"
             }
           >
-            {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
-            {/* <div className="bg-black opacity-50"></div> */}
             <h2
               className={
                 "text-h2 text-primary mb-8 uppercase font-extralight text-left"

@@ -9,7 +9,9 @@ const BackgroundVideo: React.FC = () => {
           autoPlay
           loop
           muted
-          className="absolute top-0 left-0 min-w-full min-h-full object-cover -z-10"
+          playsInline
+          poster="/poster.jpg"
+          className="absolute inset-0 min-w-full min-h-full object-cover -z-10"
         >
           <source src="/video1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -17,7 +19,7 @@ const BackgroundVideo: React.FC = () => {
 
         {/* Content Overlay */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="font font-Eyesome text-[clamp(2.5rem,9vw,12rem)] text-white text-center">
+          <h1 className="font font-Eyesome text-[clamp(2.7rem,9vw,12rem)] text-white text-center">
             Welcome to Sacred Delights!
           </h1>
         </div>

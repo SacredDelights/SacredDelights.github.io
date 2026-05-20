@@ -4,3 +4,5 @@ export { default as GetAQuote } from "./GetAQuote";
 export { default as ContactUs } from "./ContactUs";
 export { default as Story } from "./Story";
 export { default as AboutUs } from "./AboutUs";
+export { default as Merengue } from "./Merengue";
+export { default as Menu } from "./Menu";

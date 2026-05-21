@@ -67,14 +67,23 @@ module.exports = {
         'order': "url('./images/order.jpg')",
         'slidebg': "url('./images/slide-bg.png')",
 
-
       },
       minHeight: {
         '0': '0',
         '1/4': '25%',
         '1/2': '50vw',
         'full': '100%',
-      }
+      },
+
+      animation: {
+        'marquee': 'marquee 40s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        }
+      },
     },
   },
   plugins: [    plugin(function({ addBase, theme }) {

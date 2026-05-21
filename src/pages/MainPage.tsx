@@ -7,6 +7,8 @@ import BackgroundVideo from "../components/BackgroundVideo";
 import Star from "../components/Star";
 // import WebpageSection from "../components/WebpageSection";
 import Slider from "../components/Slider";
+import { ImageMarquee } from "../components/ImageMarquee";
+import { sampleGalleryItems } from "../data/galleryItems";
 
 export default function MainPage() {
   const navigate = useNavigate();
@@ -27,8 +29,7 @@ export default function MainPage() {
           >
             <div
               className={
-                // "min-h-1/2 aspect-square mb-8 text-p-plus font-extralight leading-10 p-8 md:p=16 flex-1 flex flex-col justify-center bg-gray-light"
-                " min-h-1/2 text-p-plus font-extralight leading-10 p-8 lg:p-16 lg:pt-24 pt-24 flex-1 flex flex-col justify-center bg-gray-light md:w-[50%]"
+                " min-h-1/2 text-p-plus font-extralight leading-10 p-8 lg:p-16 lg:pl-[20%] lg:pt-24 pt-24 flex-1 flex flex-col justify-center bg-gray-light md:w-[50%]"
               }
             >
               <h2
@@ -75,11 +76,24 @@ export default function MainPage() {
           <AdvancedBannerTop />
         </ParallaxProvider>
 
-        <div className="">
-          <div className="">
+        <div className="bg-secondary border-primary border-t-2">
+          <div className="flex justify-between max-w-[1124px] m-auto">
+            <div
+              className={
+                "my-6 lg:my-12 flex justify-center lg:block text-white pl-8"
+              }
+            >
+              <Button
+                children={"Learn more"}
+                isActive={false}
+                onClick={() => {
+                  goToPage("/portfolio");
+                }}
+              />
+            </div>
             <h2
               className={
-                "border-primery border-t-2 text-h2 text-primary p-8 uppercase font-extralight bg-secondary"
+                "text-h2 text-primary p-8 uppercase font-extralight bg-secondary"
               }
             >
               Portfolio
@@ -88,30 +102,20 @@ export default function MainPage() {
         </div>
 
         <div className="">
-          <div className=" bg-abstract2 bg-fixed ">
+          <div className=" bg-abstract2 bg-fixed">
             <div className="flex flex-col lg:flex-row-reverse justify-between">
-              <section className="relative isolate overflow-hidden lg:w-[50%] min-h-1/2">
+              {/* <section className="relative isolate overflow-hidden lg:w-[50%] min-h-1/2">
                 <div className="w-[1024px] h-[600px] ">
                   <Slider />
                 </div>
-              </section>
-              <div
-                className={"my-6 lg:my-12 flex justify-center lg:block lg:ml-8"}
-              >
-                <Button
-                  children={"Learn more"}
-                  isActive={false}
-                  onClick={() => {
-                    goToPage("/portfolio");
-                  }}
-                />
-              </div>
+              </section> */}
+              <ImageMarquee images={sampleGalleryItems} />
             </div>
           </div>
         </div>
 
-        <div className="">
-          <div className="bg-secondary">
+        <div className="bg-secondary">
+          <div className="max-w-[1124px] m-auto">
             <h2
               className={
                 "text-h2 bg-secondary text-primary p-8 uppercase font-extralight border-primery border-t-2"
@@ -210,12 +214,12 @@ export default function MainPage() {
         <div className=""></div>
       </div>
 
-      <div className="relative h-64 w-full bg-cover bg-center bg-order flex flex col h-auto">
+      <div className="relative h-64 w-full bg-cover bg-center bg-order h-auto">
         <div className="absolute inset-0 bg-black opacity-80 border-y-2 border-primary"></div>
-        <div className="relative z-10 flex h-full items-center justify-start">
+        <div className="relative z-10 h-full">
           <div
             className={
-              "text-white border-t-2 border-primary p-16 flex flex-col justify-start"
+              "text-white border-t-2 border-primary p-16 flex flex-col items-center max-w-[1124px] m-auto"
             }
           >
             <h2

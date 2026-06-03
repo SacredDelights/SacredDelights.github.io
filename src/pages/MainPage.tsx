@@ -19,9 +19,10 @@ export default function MainPage() {
   return (
     <div className={"all"}>
       <div className={"main"}>
-        <BackgroundVideo />
-
-        <div className="flex justify-end flex-col md:flex-row">
+        <div className="border-primary border-t-[.5px]">
+          <BackgroundVideo />
+        </div>
+        <div className="flex justify-end flex-col md:flex-row border-primery border-t-[.5px]">
           <div
             className={
               "flex justify-center flex-col-reverse md:flex-row md:w-[50%]"
@@ -66,7 +67,7 @@ export default function MainPage() {
             Custom BG
           </div>
         </div> */}
-        <div className="md:hidden p-8 z-10 left-[45px] bg-secondary border-primary border-t-2">
+        <div className="md:hidden p-8 z-10 left-[45px] bg-secondary border-primary border-t-[.5px]">
           <h2 className=" text-4xl text-h2 text-primary uppercase font-extralight">
             About us
           </h2>
@@ -76,11 +77,11 @@ export default function MainPage() {
           <AdvancedBannerTop />
         </ParallaxProvider>
 
-        <div className="bg-secondary border-primary border-t-2">
-          <div className="flex justify-between max-w-[1124px] m-auto">
+        <div className="bg-secondary border-primary border-t-[.5px]">
+          <div className="flex flex-col-reverse sm:flex-row justify-between max-w-[1124px] m-auto">
             <div
               className={
-                "my-6 lg:my-12 flex justify-center lg:block text-white pl-8"
+                "my-6 lg:my-12 flex justify-center lg:block text-white pl-0 sm:pl-8"
               }
             >
               <Button
@@ -93,7 +94,7 @@ export default function MainPage() {
             </div>
             <h2
               className={
-                "text-h2 text-primary p-8 uppercase font-extralight bg-secondary"
+                "text-h2 text-primary p-8 uppercase font-extralight bg-secondary sm:text-right"
               }
             >
               Portfolio
@@ -101,7 +102,7 @@ export default function MainPage() {
           </div>
         </div>
 
-        <div className="">
+        <div className=" border-primery border-t-[.5px]">
           <div className=" bg-abstract2 bg-fixed">
             <div className="flex flex-col lg:flex-row-reverse justify-between">
               {/* <section className="relative isolate overflow-hidden lg:w-[50%] min-h-1/2">
@@ -114,11 +115,11 @@ export default function MainPage() {
           </div>
         </div>
 
-        <div className="bg-secondary">
-          <div className="max-w-[1124px] m-auto">
+        <div className="bg-secondary border-primery border-t-[.5px]">
+          <div className="max-w-[1124px] m-auto pb-16">
             <h2
               className={
-                "text-h2 bg-secondary text-primary p-8 uppercase font-extralight border-primery border-t-2"
+                "text-h2 bg-secondary text-primary p-8 uppercase font-extralight"
               }
             >
               Customer Reviews
@@ -214,12 +215,12 @@ export default function MainPage() {
         <div className=""></div>
       </div>
 
-      <div className="relative h-64 w-full bg-cover bg-center bg-order h-auto">
-        <div className="absolute inset-0 bg-black opacity-80 border-y-2 border-primary"></div>
+      <div className="relative h-64 w-full bg-cover bg-center bg-order h-auto border-y-[.5px] border-primary">
+        <div className="absolute inset-0 bg-black opacity-80"></div>
         <div className="relative z-10 h-full">
           <div
             className={
-              "text-white border-t-2 border-primary p-16 flex flex-col items-center max-w-[1124px] m-auto"
+              "text-white p-16 flex flex-col items-center max-w-[1124px] m-auto"
             }
           >
             <h2
@@ -234,10 +235,10 @@ export default function MainPage() {
             </p>
             <div className={"my-6 md:my-12"}>
               <Button
-                children={"Order"}
+                children={"Request"}
                 isActive={false}
                 onClick={() => {
-                  goToPage("/br/quote");
+                  goToPage("/request");
                 }}
               />
             </div>

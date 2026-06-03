@@ -11,11 +11,7 @@ export const Navbar = () => {
     setClassName("icon-menu");
   };
   return (
-    <div
-      className={
-        "header-wrap bg-black shadow-[0_2px_0_0_rgba(255,255,255,0.2)]"
-      }
-    >
+    <div className={"header-wrap bg-black"}>
       <header className="">
         <nav className={"flex items-start justify-between"}>
           <div className={"items-center logo-nav"}>
@@ -23,7 +19,7 @@ export const Navbar = () => {
               <img
                 alt="Sacred Delights Logo"
                 src={String(logo)}
-                className={"w-[8rem] lg:w-[11rem] p-[10px]"}
+                className={"w-[8rem] p-[10px]"}
               />
             </Link>
             <div className={menuOpen ? "main-nav pb-4 open" : "main-nav"}>
@@ -46,6 +42,11 @@ export const Navbar = () => {
                 <li>
                   <NavLink to={"/about"} onClick={resetMenu}>
                     About us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/contact"} onClick={resetMenu}>
+                    Contact us
                   </NavLink>
                 </li>
                 <li>
@@ -82,7 +83,7 @@ export const Navbar = () => {
                 </li>
 
                 <li>
-                  <NavLink to={"/get-a-quote"} onClick={resetMenu}>
+                  <NavLink to={"/request"} onClick={resetMenu}>
                     Request order
                   </NavLink>
                 </li>

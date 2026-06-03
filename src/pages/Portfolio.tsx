@@ -5,7 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="">
       <div className="relative h-64 w-full bg-cover bg-center bg-[url('https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.webp')] flex flex col h-auto bg-fixed mb-[20px]">
         <div className="absolute inset-0 bg-black opacity-50 border-y-2 border-primary"></div>
         <div className="relative z-10 flex h-full items-center justify-start lg:pl-[5%]">

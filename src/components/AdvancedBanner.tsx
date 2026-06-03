@@ -26,7 +26,7 @@ export const AdvancedBannerTop = () => {
     shouldAlwaysCompleteAnimation: true,
     expanded: false,
     children: (
-      <div className="hidden  md:block md:mb-8 md:max-w-2xl md:absolute md:bg-black/50 md:p-8 md:text-white md:w-1/3 md:z-10 md:left-[45px]">
+      <div className="hidden  md:block md:mb-8 md:max-w-2xl md:absolute md:bg-black/50 md:p-8 md:text-white md:z-10 left-[0px] md:left-[30px] lg:left-[6%]">
         <h2 className="text-4xl font-bold mb-4 text-h2 text-primary uppercase font-extralight">
           About us
         </h2>
@@ -42,14 +42,14 @@ export const AdvancedBannerTop = () => {
     scale: [1.1, 1, "easeOutCubic"],
     shouldAlwaysCompleteAnimation: true,
     children: (
-      <div className="absolute bottom-[-20px] md:w-1/2 w-full right-0 p-16 md:p-8 lg:p-16 bg-black/50 text-white text-p-plus font-extralight leading-10 ">
+      <div className="absolute bottom-[-20px] md:w-1/2 w-full right-[0px] md:right-[30px] lg:right-[6%] py-16 px-8 lg:p-16 bg-black/50 text-white text-p-plus font-extralight leading-10 ">
         <p className="">{secondaryText}</p>
         <div className={"flex justify-center my-6 md:my-12"}>
           <Button
             children={"Learn more"}
             isActive={false}
             onClick={() => {
-              goToPage("/br/about");
+              goToPage("/about");
             }}
           />
         </div>

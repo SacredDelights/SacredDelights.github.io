@@ -1,5 +1,6 @@
 import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
-import { MENU_OPTIONS } from "../constants/select-options";
+import { MENU_OPTIONS } from "../../constants/select-options";
+import "./Order.css";
 
 // 1. Define TypeScript interfaces for data structures
 interface SelectOption {
@@ -33,21 +34,22 @@ export const ContactForm: React.FC = () => {
     comments: "",
   });
 
-  const [options, setOptions] = useState<SelectOption[]>([]);
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   // 3. Simulate fetching dynamic select options from a JSON source
-  useEffect(() => {
-    const mockJsonData: SelectOption[] = [
-      { value: "support", label: "Technical Support" },
-      { value: "sales", label: "Sales Inquiry" },
-      { value: "feedback", label: "General Feedback" },
-    ];
-    setOptions(mockJsonData);
-  }, []);
+  // const [options, setOptions] = useState<SelectOption[]>([]);
+  // useEffect(() => {
+  //   const mockJsonData: SelectOption[] = [
+  //     { value: "support", label: "Technical Support" },
+  //     { value: "sales", label: "Sales Inquiry" },
+  //     { value: "feedback", label: "General Feedback" },
+  //   ];
+  //   setOptions(mockJsonData);
+  // }, []);
 
   // 4. Input tracking handler
+  const phoneRegex = /^\d{10}$/;
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
@@ -77,6 +79,8 @@ export const ContactForm: React.FC = () => {
 
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
+    } else if (!phoneRegex.test(formData.phone.replace(/\D/g, ""))) {
+      newErrors.phone = "Please enter a valid 10-digit phone number.";
     }
 
     setErrors(newErrors);
@@ -84,7 +88,7 @@ export const ContactForm: React.FC = () => {
   };
 
   // 6. Form submission dispatch
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form data submitted safely:", formData);
@@ -94,11 +98,9 @@ export const ContactForm: React.FC = () => {
 
   return (
     <div className="relative max-w-md mx-auto my-8 p-6 border border-gray-200 rounded-lg shadow-sm">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">
-        <p>
-          Select cake, quantity and submit form to make your order. We will
-          contact you shortly.
-        </p>
+      <h2 className="text-[20px] text-primary mb-6">
+        <p>Select cake, quantity and submit form to make your order.</p>
+        <p> We will contact you shortly.</p>
       </h2>
 
       {isSubmitted ? (
@@ -112,25 +114,12 @@ export const ContactForm: React.FC = () => {
         <form onSubmit={handleSubmit} noValidate className="space-y-4">
           {/* Name Field */}
           <div style={{ marginBottom: "1rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                // fontWeight: "bold",
-              }}
-            >
-              Name:
-            </label>
+            <label>Name:</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-              }}
             />
             {errors.name && (
               <span style={{ color: "red", fontSize: "0.8rem" }}>
@@ -141,25 +130,12 @@ export const ContactForm: React.FC = () => {
 
           {/* Email Field */}
           <div style={{ marginBottom: "1rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                // fontWeight: "bold",
-              }}
-            >
-              Email:
-            </label>
+            <label>Email:</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-              }}
             />
             {errors.email && (
               <span style={{ color: "red", fontSize: "0.8rem" }}>
@@ -170,25 +146,14 @@ export const ContactForm: React.FC = () => {
 
           {/* Phone Field */}
           <div style={{ marginBottom: "1rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                // fontWeight: "bold",
-              }}
-            >
-              Phone:
-            </label>
+            <label>Phone:</label>
             <input
               type="tel"
+              id="phone"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-              }}
+              placeholder="(555)000-0000"
             />
             {errors.phone && (
               <span style={{ color: "red", fontSize: "0.8rem" }}>
@@ -199,25 +164,11 @@ export const ContactForm: React.FC = () => {
 
           {/* Inquiry Dropdown (JSON State) */}
           <div style={{ marginBottom: "1rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                // fontWeight: "bold",
-              }}
-            >
-              Inquiry Type:
-            </label>
+            <label>Inquiry Type:</label>
             <select
               name="selectedOption"
               value={formData.selectedOption}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-                color: "black",
-              }}
             >
               <option value="">-- Please choose in menu --</option>
               {/* {options.map((option) => (
@@ -235,16 +186,7 @@ export const ContactForm: React.FC = () => {
 
           {/* Number Field */}
           <div style={{ marginBottom: "1rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                color: "black",
-                // fontWeight: "bold",
-              }}
-            >
-              Quantity:
-            </label>
+            <label>Quantity:</label>
             <input
               type="number"
               name="quantity"
@@ -252,54 +194,24 @@ export const ContactForm: React.FC = () => {
               max="100"
               value={formData.quantity}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-                color: "black",
-              }}
             />
           </div>
 
           {/* Text Area */}
           <div style={{ marginBottom: "1.5rem" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "0.5rem",
-                // fontWeight: "bold",
-              }}
-            >
-              Comments / Message:
-            </label>
+            <label>Comments / Message:</label>
             <textarea
               name="comments"
               rows={4}
               value={formData.comments}
               onChange={handleChange}
-              style={{
-                width: "100%",
-                padding: "0.5rem",
-                boxSizing: "border-box",
-                color: "black",
-              }}
             />
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            style={{
-              width: "100%",
-              padding: "0.75rem",
-              // backgroundColor: "#007bff",
-              color: "white",
-              // border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-              // fontWeight: "bold",
-              border: "1px solid",
-            }}
+            className="text-[20px] leading-[30px] px-8 py-3 border rounded my-4 hover:border-primary hover:text-primary transition-all min-w-[155px]"
           >
             Submit Form
           </button>

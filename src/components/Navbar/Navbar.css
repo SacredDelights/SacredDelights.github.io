@@ -62,7 +62,7 @@ nav .main-nav {
     justify-content: space-between;
   } */
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1111px){
   .logo-nav {
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,6 @@ nav .main-nav {
     transition-delay: 0.1s;
     z-index:99;
     padding-left: 0;
-    /* background: #ffffff !important; */
     border-radius: 3px;
     box-shadow: 1px 1px 3px #dadada;
   }
@@ -114,16 +113,18 @@ nav .main-nav {
   .main-nav ul li span {
     display: block;
     padding: 10px;
-    /* padding-bottom: 0; */
     text-decoration: none;
     position: relative;
   }
   .icon-menu {
     display: none!important;
   }
+  nav img {
+    width: 10rem!important;
+  }
 }
 
-@media screen and (max-width:1023px){
+@media screen and (max-width:1110px){
   .main-nav {
     display: grid;
     grid-template-rows: 0fr; /*to get open/close menu animation*/

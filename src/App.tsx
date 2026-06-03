@@ -6,7 +6,7 @@ import {
   ContactUs,
   MainPage,
   Portfolio,
-  GetAQuote,
+  Request,
   Story,
   AboutUs,
   Merengue,
@@ -30,7 +30,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/menus/merengue" element={<Merengue />} />
         <Route path="/menus/menu" element={<Menu />} />
-        <Route path="/get-a-quote" element={<GetAQuote />} />
+        <Route path="/request" element={<Request />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

@@ -19,6 +19,9 @@ module.exports = {
       cocoa: {
         DEFAULT:'#3D2B1F',
       },
+      choco: {
+        DEFAULT:'rgb(36, 19, 13)',
+      },
            
       gray: {
         darkest: '#1f2d3d',
@@ -66,6 +69,7 @@ module.exports = {
         'splash': "url('./images/splash.jpg')",
         'order': "url('./images/order.jpg')",
         'slidebg': "url('./images/slide-bg.png')",
+        'location': "url('./images/pickup-location.webp')",
 
       },
       minHeight: {

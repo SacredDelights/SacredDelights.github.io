@@ -21,7 +21,7 @@ export const siteConfig = {
       secondaryText:
         "That was a turning point. The kind of moment when you open the fridge and tears come to your eyes — not from pride or joy, but from the feeling that you could have done better... and didn’t. home. Thankfully, I had friends who were more than happy to taste everything! Then came the first orders. And then... I got tired. Maybe even a little burned out. Then life changed — I moved to the United States. And as many know, life in a new country doesn’t always fall into place quickly or smoothly. But love for beauty and a bit of magic doesn’t just disappear. Over the years in the U.S., I kept baking — bringing my cakes to birthdays, celebrations, and gatherings for friends, colleagues, reactions... The way people felt when they tasted my desserts... hat became the final note. And I thought — why not try?",
       imageUrl:
-        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images//story.png",
+        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images//story.webp",
     },
   },
 };

@@ -1,0 +1,12 @@
+form input,
+form select,
+textarea {
+  color: black;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}

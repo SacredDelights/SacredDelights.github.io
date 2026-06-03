@@ -13,7 +13,7 @@ export default function Story() {
   return (
     <>
       {/* <div className="relative h-64 w-full bg-cover bg-center justify-center bg-[url('https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/story.png')] flex flex col h-auto bg-fixed"> */}
-      <div className="relative h-64 w-full bg-cover bg-center justify-center bg-order flex flex col h-auto bg-fixed">
+      <div className="">
         <WebpageSection />
       </div>
 

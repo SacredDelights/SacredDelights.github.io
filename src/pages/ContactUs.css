@@ -1,16 +1,15 @@
 .contact {
   max-width: 800px;
   margin: 0 auto;
+  transition: all ease-in-out 0.3s;
 }
 .contact-wrap {
-  margin-bottom: 20px;
-  padding: 6% 20px;
-  /* background-image: url("../images/contact-bkg.png"); */
+  padding: 30px 0;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: scroll;
   background-size: cover;
 }
 .contact-link a:hover {
-  color: #e37d00;
+  color: #C5A059;
 }

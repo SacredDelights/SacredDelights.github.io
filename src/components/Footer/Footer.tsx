@@ -93,10 +93,10 @@ export default function Footer() {
         <div className="quote text-center flex justify-center items-center text-[#F9F5F1]">
           <Button
             // className={"text-white"}
-            children={"Get a quote"}
+            children={"Request Order"}
             isActive={false}
             onClick={() => {
-              goToPage("/get-a-quote");
+              goToPage("/request");
             }}
           />
         </div>

@@ -1,6 +1,4 @@
 import React from "react";
-// import { images } from "../data/galleryItems";
-// import { GalleryItem } from '../../interfaces';
 
 interface MarqueeImage {
   id: string | number;

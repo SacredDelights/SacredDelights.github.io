@@ -184,7 +184,7 @@ nav .main-nav {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #888;
+  background-color:#ccc;
   transition: all 0.3s ease 0s;
 }
 
@@ -200,7 +200,7 @@ nav .main-nav {
 
 @media (hover: none) {
   .icon-menu:hover:before, .icon-menu:hover:after, .icon-menu:hover span {
-    background-color: #888;
+    background-color: #ccc;
   }
 }
 

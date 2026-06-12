@@ -6,10 +6,12 @@
   margin-left: -20px;
   width: auto;
   padding: 0 20px;
+  padding-top: 20px;
 }
 @media (min-width: 769px) {
   .my-masonry-grid {
     padding: 0 10%;
+    padding-top: 20px;
   }
 }
 

@@ -102,14 +102,9 @@ export default function MainPage() {
           </div>
         </div>
 
-        <div className=" border-primery border-t-[.5px]">
+        <div className=" border-primary border-t-[.5px]">
           <div className=" bg-abstract2 bg-fixed">
             <div className="flex flex-col lg:flex-row-reverse justify-between">
-              {/* <section className="relative isolate overflow-hidden lg:w-[50%] min-h-1/2">
-                <div className="w-[1024px] h-[600px] ">
-                  <Slider />
-                </div>
-              </section> */}
               <ImageMarquee images={sampleGalleryItems} />
             </div>
           </div>

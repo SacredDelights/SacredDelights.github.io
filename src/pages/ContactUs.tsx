@@ -2,16 +2,17 @@ import React from "react";
 import "./ContactUs.css";
 import phone from "../images/phone-icon.png";
 import { TextContainer } from "../components/Container/Container";
+import Banner from "../components/Banner";
 export default function ContactUs() {
   return (
     <div className={"border-y-[.5px] border-primary"}>
-      <div
+      {/* <div
         className={
           "relative bg-location min-h-[40vw] bg-cover lg:bg-fixed text-primary"
         }
       >
         <div className={"bg-gradient-to-r from-black"}>
-          {/* <div className={"absolute bg-black/50 inset-0"}> */}
+
           <TextContainer variant="wide">
             <div className={"flex min-h-[40vw] items-center"}>
               <h1 className={"flex flex-col"}>
@@ -26,7 +27,8 @@ export default function ContactUs() {
             </div>
           </TextContainer>
         </div>
-      </div>
+      </div> */}
+      <Banner positionClass="l" />
       <div className="relative text-white bg-[url('https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/54FCEEB5-472A-43B6-94FA-C9E19FA6A23B.webp')]">
         <TextContainer variant="wide">
           <div className="contact-wrap">

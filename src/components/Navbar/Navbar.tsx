@@ -5,11 +5,16 @@ const logo = require("../../../src/images/header-logo.jpg");
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  // const [subMenuOpen, setSubMenuOpen] = useState(false);
   const [className, setClassName] = useState<string>("icon-menu");
   const resetMenu = () => {
     setMenuOpen(false);
     setClassName("icon-menu");
   };
+  // const resetSubMenu = () => {
+  //   setSubMenuOpen(false);
+  //   setClassName("icon-menu");
+  // };
   return (
     <div className={"header-wrap bg-black"}>
       <header className="">
@@ -74,11 +79,11 @@ export const Navbar = () => {
                         Merengue Rolls
                       </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to={"/menus/menu"} onClick={resetMenu}>
                         Menu2
                       </NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
 

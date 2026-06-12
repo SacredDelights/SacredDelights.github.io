@@ -70,6 +70,7 @@ module.exports = {
         'order': "url('./images/order.jpg')",
         'slidebg': "url('./images/slide-bg.png')",
         'location': "url('./images/pickup-location.webp')",
+        'icons': "url('./images/icons2.jpg')",
 
       },
       minHeight: {

@@ -94,7 +94,7 @@ export const ContactForm: React.FC = () => {
     if (validateForm()) {
       // console.log("Form data submitted safely:", formData);
       const formData = new FormData(e.target);
-      formData.append("access_key", "8b510a06-13e6-4e3e-928a-fa3a0fc9bc41");
+      formData.append("access_key", "8ea183ab-88cb-446b-804f-bb11a18e3c9a");
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

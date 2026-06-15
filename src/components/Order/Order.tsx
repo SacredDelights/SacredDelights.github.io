@@ -88,11 +88,22 @@ export const ContactForm: React.FC = () => {
   };
 
   // 6. Form submission dispatch
-  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (validateForm()) {
-      console.log("Form data submitted safely:", formData);
-      setIsSubmitted(true);
+      // console.log("Form data submitted safely:", formData);
+      const formData = new FormData(e.target);
+      formData.append("access_key", "8b510a06-13e6-4e3e-928a-fa3a0fc9bc41");
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      // setResult(data.success ? "Success!" : "Error");
+      setIsSubmitted(data.success ? true : false);
     }
   };
 

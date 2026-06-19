@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.13e27ca6.css",
-    "main.js": "/static/js/main.fa67a6c2.js",
+    "main.css": "/static/css/main.6e7dfdef.css",
+    "main.js": "/static/js/main.ba0b72cb.js",
     "static/js/453.6ac22910.chunk.js": "/static/js/453.6ac22910.chunk.js",
     "static/media/UbuntuSans-VariableFont_wdth,wght.ttf": "/static/media/UbuntuSans-VariableFont_wdth,wght.723dafe9240c218e8bcc.ttf",
     "static/media/abstract2.jpg": "/static/media/abstract2.9dc6dcfeb2567afaefeb.jpg",
@@ -14,16 +14,15 @@
     "static/media/font.woff2": "/static/media/font.d6a5b7f9003a4b4254dc.woff2",
     "static/media/menu-merengue.webp": "/static/media/menu-merengue.d49df790aad039baefe6.webp",
     "static/media/Lato-Light.ttf": "/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
-    "static/media/pickup-location.webp": "/static/media/pickup-location.7caa1f0c23d20dc2ae51.webp",
     "static/media/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.webp": "/static/media/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.71e30d244e95cb7e02e9.webp",
     "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "index.html": "/index.html",
-    "main.13e27ca6.css.map": "/static/css/main.13e27ca6.css.map",
-    "main.fa67a6c2.js.map": "/static/js/main.fa67a6c2.js.map",
+    "main.6e7dfdef.css.map": "/static/css/main.6e7dfdef.css.map",
+    "main.ba0b72cb.js.map": "/static/js/main.ba0b72cb.js.map",
     "453.6ac22910.chunk.js.map": "/static/js/453.6ac22910.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13e27ca6.css",
-    "static/js/main.fa67a6c2.js"
+    "static/css/main.6e7dfdef.css",
+    "static/js/main.ba0b72cb.js"
   ]
 }

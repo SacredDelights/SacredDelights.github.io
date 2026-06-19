@@ -9,6 +9,7 @@ import Star from "../components/Star";
 import Slider from "../components/Slider";
 import { ImageMarquee } from "../components/ImageMarquee";
 import { sampleGalleryItems } from "../data/galleryItems";
+import FeedbackList from "../components/Feedbacklist/FeedbackList";
 
 export default function MainPage() {
   const navigate = useNavigate();
@@ -111,7 +112,7 @@ export default function MainPage() {
         </div>
 
         <div className="bg-secondary border-primery border-t-[.5px]">
-          <div className="max-w-[1124px] m-auto pb-16">
+          <div className="max-w-[1124px] m-auto">
             <h2
               className={
                 "text-h2 bg-secondary text-primary p-8 uppercase font-extralight"
@@ -119,95 +120,20 @@ export default function MainPage() {
             >
               Customer Reviews
             </h2>
-            <div className="flex flex-col md:flex-row max-w-[1024px] justify-center bg-secondary">
-              <section className="relative overflow-hidden p-6 md:py-12 lg:px-8 bg-cocoa">
-                <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                  <div className="flex">
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                  </div>
-                  <figure className="mt-10">
-                    <blockquote className="text-center text-xl/8 font-semibold text-white sm:text-2xl/9">
-                      <p className="font-extralight">
-                        “Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nemo expedita voluptas culpa sapiente alias
-                        molestiae. Numquam corrupti in laborum sed rerum et
-                        corporis.”
-                      </p>
-                    </blockquote>
-                    <figcaption className="mt-10">
-                      <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                        <div className="font-extralight text-white">
-                          Tanya A. - Odessa Fl.
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </section>
-              <section className="relative overflow-hidden p-6 md:py-12 lg:px-8 bg-cocoa">
-                <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                  <div className="flex">
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                  </div>
-                  <figure className="mt-10">
-                    <blockquote className="text-center text-xl/8 font-semibold text-white sm:text-2xl/9">
-                      <p className="font-extralight">
-                        “Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nemo expedita voluptas culpa sapiente alias
-                        molestiae. Numquam corrupti in laborum sed rerum et
-                        corporis.”
-                      </p>
-                    </blockquote>
-                    <figcaption className="mt-10">
-                      <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                        <div className="font-extralight text-white">
-                          Tanya A. - Odessa Fl.
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </section>
-              <section className="relative overflow-hidden p-6 md:py-12 lg:px-8 bg-cocoa">
-                <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                  <div className="flex">
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                    <Star />
-                  </div>
-                  <figure className="mt-10">
-                    <blockquote className="text-center text-xl/8 font-semibold text-white sm:text-2xl/9">
-                      <p className="font-extralight">
-                        “Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Nemo expedita voluptas culpa sapiente alias
-                        molestiae. Numquam corrupti in laborum sed rerum et
-                        corporis.”
-                      </p>
-                    </blockquote>
-                    <figcaption className="mt-10">
-                      <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                        <div className="font-extralight text-white">
-                          Tanya A. - Odessa Fl.
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
-                </div>
-              </section>
+            <FeedbackList />
+            <div className="flex justify-end pr-8">
+              <a
+                href="https://docs.google.com/forms/d/1SNhg1whsCxpZqOtfrgy4_fR33AnS0CUdVmPtbKmO4lw/edit?pli=1"
+                target="_blank"
+                className={
+                  "text-white text-[20px] leading-[30px] px-8 py-3 border rounded my-12 md:my-16 hover:border-primary hover:text-primary transition-all min-w-[155px]"
+                }
+              >
+                Give Feedback
+              </a>
             </div>
           </div>
         </div>
-        <div className=""></div>
       </div>
 
       <div className="relative h-64 w-full bg-cover bg-center bg-order h-auto border-y-[.5px] border-primary">

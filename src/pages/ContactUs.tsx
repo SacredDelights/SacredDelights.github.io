@@ -6,28 +6,6 @@ import Banner from "../components/Banner";
 export default function ContactUs() {
   return (
     <div className={"border-y-[.5px] border-primary"}>
-      {/* <div
-        className={
-          "relative bg-location min-h-[40vw] bg-cover lg:bg-fixed text-primary"
-        }
-      >
-        <div className={"bg-gradient-to-r from-black"}>
-
-          <TextContainer variant="wide">
-            <div className={"flex min-h-[40vw] items-center"}>
-              <h1 className={"flex flex-col"}>
-                <span
-                  className={
-                    "text-h2 text-center font-Ubuntu uppercase font-extralight"
-                  }
-                >
-                  Contact us
-                </span>
-              </h1>
-            </div>
-          </TextContainer>
-        </div>
-      </div> */}
       <Banner positionClass="l" />
       <div className="relative text-white bg-[url('https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/54FCEEB5-472A-43B6-94FA-C9E19FA6A23B.webp')]">
         <TextContainer variant="wide">

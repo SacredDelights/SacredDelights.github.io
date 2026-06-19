@@ -1,0 +1,10 @@
+.star-rating {
+  font-size: 1.5rem;
+  color: #ffc107; /* Gold/Yellow color */
+}
+/* Use the custom attributes to dynamically display the correct string */
+.star-rating[data-rating="1"]::before { content: "★☆☆☆☆"; }
+.star-rating[data-rating="2"]::before { content: "★★☆☆☆"; }
+.star-rating[data-rating="3"]::before { content: "★★★☆☆"; }
+.star-rating[data-rating="4"]::before { content: "★★★★☆"; }
+.star-rating[data-rating="5"]::before { content: "★★★★★"; }

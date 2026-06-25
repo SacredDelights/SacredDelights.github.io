@@ -63,11 +63,6 @@ export default function MainPage() {
           </div>
         </div>
 
-        {/* <div className="flex justify-end">
-          <div className="custombg bg-custombg bg-right bg-cover bg-fixed bg-no-repeat bg-size-[auto_500px] min-h-[500px] w-[50%]">
-            Custom BG
-          </div>
-        </div> */}
         <div className="md:hidden p-8 z-10 left-[45px] bg-secondary border-primary border-t-[.5px]">
           <h2 className=" text-4xl text-h2 text-primary uppercase font-extralight">
             About us

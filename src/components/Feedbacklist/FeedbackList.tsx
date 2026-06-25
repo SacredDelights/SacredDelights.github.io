@@ -16,7 +16,7 @@ const FeedbackList: React.FC = () => {
 
   // Replace with your actual Web App URL from Step 1
   const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxMjNPsDem-FLliKVNZmN362EhGoBQh0jw_V3vAfn1qwXx5i-Ko1Fn28b2D_f7eIpk1eA/exec";
+    "https://script.google.com/macros/s/AKfycbz3_eblalabEE1lczbi7LAKZFxKXLza2VIF4Zs27wor4AbAQRbG9HWdefO328-N5Z3U5w/exec";
 
   useEffect(() => {
     const fetchData = async () => {

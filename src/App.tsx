@@ -9,13 +9,15 @@ import {
   Request,
   Story,
   AboutUs,
-  Merengue,
-  Menu,
 } from "./pages";
 
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import PageNotFound from "./pages/PageNotFound";
+import CarrotCake from "./pages/CarrotCake";
+import HoneyCake from "./pages/HoneyCake";
+import MeringueRoll from "./pages/MeringueRoll";
+import TresLeches from "./pages/TresLeches";
 
 function App() {
   return (
@@ -28,8 +30,10 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/menus/merengue" element={<Merengue />} />
-        <Route path="/menus/menu" element={<Menu />} />
+        <Route path="/menus/CarrotCake" element={<CarrotCake />} />
+        <Route path="/menus/HoneyCake" element={<HoneyCake />} />
+        <Route path="/menus/MeringueRoll" element={<MeringueRoll />} />
+        <Route path="/menus/TresLeches" element={<TresLeches />} />
         <Route path="/request" element={<Request />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

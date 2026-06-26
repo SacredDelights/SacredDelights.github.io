@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import { TextContainer } from "../components/Container/Container";
-import menu from "../images/menu-merengue.webp";
-export default function Merengue() {
+import menu from "../images/menu_tres_leches.webp";
+export default function TresLeches() {
   return (
     <div className={"border-y-[.5px] border-primary"}>
       <Banner positionClass="c" />

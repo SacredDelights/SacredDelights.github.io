@@ -75,15 +75,25 @@ export const Navbar = () => {
 
                   <ul className={"sub-menu"}>
                     <li>
-                      <NavLink to={"/menus/Merengue"} onClick={resetMenu}>
-                        Merengue Rolls
+                      <NavLink to={"/menus/CarrotCake"} onClick={resetMenu}>
+                        Carrot Cake
                       </NavLink>
                     </li>
-                    {/* <li>
-                      <NavLink to={"/menus/menu"} onClick={resetMenu}>
-                        Menu2
+                    <li>
+                      <NavLink to={"/menus/HoneyCake"} onClick={resetMenu}>
+                        Honey Cake
                       </NavLink>
-                    </li> */}
+                    </li>
+                    <li>
+                      <NavLink to={"/menus/MeringueRoll"} onClick={resetMenu}>
+                        Meringue Roll
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={"/menus/TresLeches"} onClick={resetMenu}>
+                        Tres Leches
+                      </NavLink>
+                    </li>
                   </ul>
                 </li>
 

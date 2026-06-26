@@ -1,8 +1,6 @@
 export const siteConfig = {
   title: "Sacred Delights",
   description: "",
-  // navItems: [{ href: "/about", label: "About Us" }],
-  // error: "Access Denied",
 
   pagesContent: {
     "/about": {
@@ -43,8 +41,29 @@ export const siteConfig = {
       imageUrl:
         "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.webp",
     },
-    "/menus/Merengue": {
-      headerTitle: "Merengue Rolls",
+    "/menus/CarrotCake": {
+      headerTitle: "Carrot Cake",
+      headerDescription: "This is some words about it",
+      secondaryText: "",
+      imageUrl:
+        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/54FCEEB5-472A-43B6-94FA-C9E19FA6A23B.webp",
+    },
+    "/menus/HoneyCake": {
+      headerTitle: "Honey Cake",
+      headerDescription: "This is some words about it",
+      secondaryText: "",
+      imageUrl:
+        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/54FCEEB5-472A-43B6-94FA-C9E19FA6A23B.webp",
+    },
+    "/menus/MeringueRoll": {
+      headerTitle: "Meringue Roll",
+      headerDescription: "This is some words about it",
+      secondaryText: "",
+      imageUrl:
+        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/gallery/54FCEEB5-472A-43B6-94FA-C9E19FA6A23B.webp",
+    },
+    "/menus/TresLeches": {
+      headerTitle: "Tres Leches",
       headerDescription: "This is some words about it",
       secondaryText: "",
       imageUrl:

@@ -66,7 +66,7 @@ module.exports = {
         'custombg1': "url('./images/logan-voss-unsplash.jpg')",
         'abstract': "url('./images/abstract.jpg')",
         'abstract2': "url('./images/abstract2.jpg')",
-        'splash': "url('./images/splash.jpg')",
+        'splash': "url('./images/chocolate-splash.webp')",
         'order': "url('./images/order.jpg')",
         'slidebg': "url('./images/slide-bg.png')",
         'location': "url('./images/pickup-location.webp')",

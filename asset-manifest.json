@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.909e0e57.css",
-    "main.js": "/static/js/main.84a70ebb.js",
+    "main.css": "/static/css/main.60570e21.css",
+    "main.js": "/static/js/main.e2822a4c.js",
     "static/js/453.6ac22910.chunk.js": "/static/js/453.6ac22910.chunk.js",
     "static/media/UbuntuSans-VariableFont_wdth,wght.ttf": "/static/media/UbuntuSans-VariableFont_wdth,wght.723dafe9240c218e8bcc.ttf",
     "static/media/abstract2.jpg": "/static/media/abstract2.9dc6dcfeb2567afaefeb.jpg",
     "static/media/order.jpg": "/static/media/order.b627110581addc707b48.jpg",
-    "static/media/splash.jpg": "/static/media/splash.55a2e33d1a1f7169554f.jpg",
     "static/media/icons2.jpg": "/static/media/icons2.d421cee54e3c432e422b.jpg",
     "static/media/header-logo.jpg": "/static/media/header-logo.71bd6eb9aed99ea508a6.jpg",
-    "static/media/menu-mr.webp": "/static/media/menu-mr.10030a3705025fdb759a.webp",
+    "static/media/menu_tres_leches.webp": "/static/media/menu_tres_leches.a5e527558e449c46e1d2.webp",
+    "static/media/menu_meringue_roll.webp": "/static/media/menu_meringue_roll.6071de3c33df4e619371.webp",
     "static/media/font.woff": "/static/media/font.8d0ea1464aaebf68baaa.woff",
     "static/media/font.woff2": "/static/media/font.d6a5b7f9003a4b4254dc.woff2",
-    "static/media/menu-merengue.webp": "/static/media/menu-merengue.d49df790aad039baefe6.webp",
+    "static/media/menu_honey_cake.webp": "/static/media/menu_honey_cake.9bea6103a98b9802abfd.webp",
+    "static/media/menu_carrot_cake.webp": "/static/media/menu_carrot_cake.835efaf9a94f227b8e8f.webp",
     "static/media/Lato-Light.ttf": "/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
     "static/media/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.webp": "/static/media/6B05B593-278E-4127-A7F8-FE2B8BDDADE7.71e30d244e95cb7e02e9.webp",
     "static/media/Lato-Regular.ttf": "/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/chocolate-splash.webp": "/static/media/chocolate-splash.52bd539019f4119e5712.webp",
     "index.html": "/index.html",
-    "main.909e0e57.css.map": "/static/css/main.909e0e57.css.map",
-    "main.84a70ebb.js.map": "/static/js/main.84a70ebb.js.map",
+    "main.60570e21.css.map": "/static/css/main.60570e21.css.map",
+    "main.e2822a4c.js.map": "/static/js/main.e2822a4c.js.map",
     "453.6ac22910.chunk.js.map": "/static/js/453.6ac22910.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.909e0e57.css",
-    "static/js/main.84a70ebb.js"
+    "static/css/main.60570e21.css",
+    "static/js/main.e2822a4c.js"
   ]
 }

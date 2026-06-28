@@ -25,7 +25,7 @@ export const siteConfig = {
       headerDescription: "",
       secondaryText: "",
       imageUrl:
-        "https://sacreddelights.github.io/static/media/pickup-location.7caa1f0c23d20dc2ae51.webp",
+        "https://raw.githubusercontent.com/SacredDelights/SacredDelights.github.io/refs/heads/main/src/images/pickup-location.webp",
     },
     "/request": {
       headerTitle: "Request order",
